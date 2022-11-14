@@ -1,12 +1,23 @@
 import { useState } from "react";
 
+// import firebase functions
+import firebase from './firebase';
+import { getDatabase, ref, push } from 'firebase/database'
+
 const Guide = () => {
 
     const [ emailInput, setEmailInput ] = useState("");
 
+    // set firebase endpoint
+    const database = getDatabase(firebase)
+    const databaseRef = ref(database, `/emails`)
+
     const handleSubscribe = (event) => {
 
         event.preventDefault();
+
+        // push the item to the firebase endpoint
+        push(databaseRef, emailInput);
 
         setEmailInput("");
     }

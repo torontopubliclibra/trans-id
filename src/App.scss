@@ -6,12 +6,6 @@ body {
   background: linear-gradient(-135deg, $color3 22px, transparent 1%) center, linear-gradient(rgba($color4, 0.8) 18px, transparent 1%) center, rgba($color1, 0.8);
   background-size: 20px 20px;
   background-attachment: fixed;
-  a {
-    color: $color6;
-    &:hover {
-      color: $color2;
-    }
-  }
   hr {
     border: solid $black 2px;
     margin: 0;

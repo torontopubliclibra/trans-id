@@ -5,18 +5,24 @@
 body {
     letter-spacing: 0.75px;
     text-align: center;
-    color: $black;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
     header {
+        a {
+            text-decoration: none;
+        }
         h1 {
-            color: $white;
-            font-weight: 500;
+            color: $black;
+            text-transform: uppercase;
+            font-weight: 600;
             font-size: 70px;
             letter-spacing: 3px;
             padding: 0;
             margin: 0 25px;
+            &:hover {
+
+            }
         }
         nav ul li {
             font-size: 20px;
@@ -65,12 +71,11 @@ body {
     }
     footer {
         p {
-            color: $white;
             font-size: 15px;
             font-weight: 500;
             margin: 0 25px;
             a {
-                color: $white;
+                color: $black;
                 &:hover {
                     color: $color6;
                     transition: 0.3s;

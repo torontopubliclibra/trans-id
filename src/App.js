@@ -8,7 +8,12 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Trans I.D.</h1>
+        <Link to="/">
+          <div className="title">
+            <h1>Trans I.D.</h1>
+          </div>
+        </Link>
+        
         <nav>
           <ul>
             <li>

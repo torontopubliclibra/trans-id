@@ -1,0 +1,84 @@
+@use './variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+body {
+    text-align: center;
+    color: $black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    header {
+        h1 {
+            font-weight: 500;
+            font-size: 70px;
+            padding: 0;
+            margin: 0 25px;
+        }
+        nav ul li {
+            font-size: 22px;
+            text-transform: uppercase;
+            a {
+                font-weight: 500;
+                text-decoration: none;
+                color: $white;
+                &:hover {
+                    color: $color6;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    h2 {
+        font-size: 40px;
+        padding: 10px 0;
+        margin: 0;
+    }
+    main {
+        blockquote {
+            line-height: 2;
+            letter-spacing: 1.3px;
+            width: 75%;
+            margin: 0 auto;
+        }
+        p {
+            padding: 10px 0;
+            line-height: 1.5;
+        }
+    }
+    footer {
+        p {
+            color: $white;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 25px;
+            a {
+                color: $color6;
+                &:hover {
+                    color: $black;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+// screens smaller than 768px
+@media only screen and (max-width: 768px) {
+    body {
+        header {
+            h1 {
+                font-size: 55px;
+            }
+        }
+        h2 {
+            font-size: 26px;
+        }
+        main {
+            blockquote {
+                width: 95%;
+                font-size: 15px;
+            }
+        }
+    }
+}

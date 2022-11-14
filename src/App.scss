@@ -1,0 +1,95 @@
+@use 'partials/setup';
+@use 'partials/variables' as *;
+@use 'partials/typography' as *;
+
+body {
+    background: linear-gradient(-135deg, $color1 26px, transparent 1%) center, linear-gradient(rgba($color4, 0.8) 20px, transparent 1%) center, rgba($color4, 0.8);
+    background-size: 23px 23px;
+    a {
+        color: $color6;
+        &:hover {
+            color: $color2;
+        }
+    }
+    hr {
+        border: solid $black 2px;
+        margin: 0;
+    }
+    .App {
+        background-color: rgba($white, 0.9);
+        border: solid $black 4px;
+        width: 80%;
+        margin: 50px auto;
+        overflow: hidden;
+    }
+    header, footer {
+        padding: 25px 0px;
+    }
+    header {
+        background-color: $color5;
+        nav {
+            ul {
+                padding: 0;
+                margin: 0;
+                margin-top: 25px;
+                width: 100%;
+                background-color: $color2;
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                gap: 20px;
+                li {
+                    padding: 15px 0px;
+                }
+            }
+        }
+    }
+    footer {
+        background-color: $color2;
+    }
+    main {
+        padding: 25px;
+        blockquote {
+            background-color: rgba($color6, 0.5);
+            padding: 20px;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            gap: 10px;
+            label {
+                margin: 0;
+            }
+            input, button {
+                padding: 5px;
+                border: solid $black 2px;
+                border-radius: 5px;
+            }
+            input {
+                width: 225px;
+            }
+            button {
+                width: 125px;
+                background-color: $color3;
+                cursor: pointer;
+                &:hover {
+                    background-color: $color2;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}
+
+// screens smaller than 768px
+@media only screen and (max-width: 768px) {
+    body {
+        main {
+            form {
+                flex-direction: column;
+            }
+        }
+    }
+}

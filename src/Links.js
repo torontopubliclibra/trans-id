@@ -34,6 +34,15 @@ const Links = () => {
         </div>
     )
 
+    const Links = () => {
+        switch (province) {
+            case "ontario":
+                return ontarioLinks;
+            default:
+                break;
+        }
+    }
+
     return (
         <main>
             <h2>Links and Resources</h2>
@@ -45,8 +54,8 @@ const Links = () => {
                 </select>
             </div>
             {
-                province === "ontario"
-                ? ontarioLinks
+                province
+                ? Links()
                 : null
             }
         </main>

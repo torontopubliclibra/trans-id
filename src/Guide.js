@@ -24,8 +24,8 @@ const Guide = () => {
 
     return (
         <main>
-            <h2>The guide is currently in development.</h2>
-            <p>Sign up below to be emailed when it launches.</p>
+            <h2>Trans I.D. Guide</h2>
+            <p>The guide is currently in development. Sign up below to be emailed when it launches.</p>
             <form onSubmit={handleSubscribe}>
                 <label htmlFor="email">Email:</label>
                 <input id="email" type="email" value={emailInput} onInput={(event) => {setEmailInput(event.target.value)}}></input>

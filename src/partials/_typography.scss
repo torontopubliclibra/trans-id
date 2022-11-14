@@ -11,6 +11,7 @@ body {
     font-weight: 400;
     header {
         h1 {
+            color: $white;
             font-weight: 500;
             font-size: 70px;
             letter-spacing: 3px;
@@ -23,9 +24,9 @@ body {
             a {
                 font-weight: 500;
                 text-decoration: none;
-                color: $white;
+                color: $black;
                 &:hover {
-                    color: $color6;
+                    color: $white;
                     transition: 0.3s;
                 }
             }
@@ -69,9 +70,9 @@ body {
             font-weight: 500;
             margin: 0 25px;
             a {
-                color: $color6;
+                color: $white;
                 &:hover {
-                    color: $black;
+                    color: $color6;
                     transition: 0.3s;
                 }
             }
@@ -94,6 +95,10 @@ body {
             blockquote {
                 width: 95%;
                 font-size: 15px;
+            }
+            input {
+                min-width: 80%;
+                text-align: center;
             }
         }
     }

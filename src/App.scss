@@ -22,11 +22,13 @@ body {
         border: solid $black 4px;
         border-radius: 25px;
         width: 80%;
+        max-width: 1250px;
         justify-content: space-between;
         margin: 50px auto;
         overflow: hidden;
     }
     header, footer {
+        width: 100%;
         padding: 25px 0px;
     }
     header {

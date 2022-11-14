@@ -29,7 +29,7 @@ const Links = () => {
             </ul>
             <h3>Canadian SIN Updates</h3>
             <ul>
-                <li><a href="file:///Users/danateagle/Downloads/GC-NAS2120.pdf" target="_blank" rel="noreferrer">Social Insurance Number Information Change Application</a></li>
+                <li><a href="https://catalogue.servicecanada.gc.ca/content/EForms/en/CallForm.html?Lang=en&PDF=GC-NAS2120.pdf" target="_blank" rel="noreferrer">Social Insurance Number Information Change Application</a></li>
             </ul>
         </div>
     )

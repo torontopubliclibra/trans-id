@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 
 body {
+    letter-spacing: 0.75px;
     text-align: center;
     color: $black;
     font-family: 'Montserrat', sans-serif;
@@ -12,11 +13,12 @@ body {
         h1 {
             font-weight: 500;
             font-size: 70px;
+            letter-spacing: 3px;
             padding: 0;
             margin: 0 25px;
         }
         nav ul li {
-            font-size: 22px;
+            font-size: 20px;
             text-transform: uppercase;
             a {
                 font-weight: 500;
@@ -38,12 +40,26 @@ body {
         blockquote {
             line-height: 2;
             letter-spacing: 1.3px;
+            font-weight: 500;
             width: 75%;
-            margin: 0 auto;
+            margin: 20px auto;
         }
         p {
             padding: 10px 0;
             line-height: 1.5;
+            margin: 0;
+        }
+        .linksAndResources {
+            ul li {
+                color: $color1;
+                a {
+                    color: $black;
+                    &:hover {
+                        color: $white;
+                        transition: 0.3s;
+                    }
+                }
+            }
         }
     }
     footer {
@@ -68,7 +84,7 @@ body {
     body {
         header {
             h1 {
-                font-size: 55px;
+                font-size: 50px;
             }
         }
         h2 {

@@ -1,7 +1,8 @@
 import "./App.scss";
 import { Link, Routes, Route } from 'react-router-dom';
-import Main from "./Main";
+import Guide from "./Guide";
 import About from "./About";
+import Links from "./Links";
 
 function App() {
   return (
@@ -11,7 +12,10 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Guide</Link>
+            </li>
+            <li>
+              <Link to="/links">Links</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
@@ -19,12 +23,11 @@ function App() {
           </ul>
         </nav>
       </header>
-      <hr />
       <Routes>
-        <Route path="/" element={ <Main /> } /> 
+        <Route path="/" element={ <Guide /> } /> 
         <Route path="/about" element={ <About /> } /> 
+        <Route path="/links" element={ <Links /> } /> 
       </Routes>
-      <hr />
       <footer>
         <p>
           Developed and maintained by <a href="https://danateagle.com" target="_blank" rel="noreferrer">Dana Teagle</a>.

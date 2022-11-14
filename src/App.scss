@@ -3,8 +3,8 @@
 @use 'partials/typography' as *;
 
 body {
-    background: linear-gradient(-135deg, $color1 26px, transparent 1%) center, linear-gradient(rgba($color4, 0.8) 20px, transparent 1%) center, rgba($color4, 0.8);
-    background-size: 23px 23px;
+    background: linear-gradient(-135deg, $color1 22px, transparent 1%) center, linear-gradient(rgba($color4, 0.8) 18px, transparent 1%) center, rgba($color1, 0.8);
+    background-size: 20px 20px;
     a {
         color: $color6;
         &:hover {
@@ -16,9 +16,13 @@ body {
         margin: 0;
     }
     .App {
-        background-color: rgba($white, 0.9);
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
         border: solid $black 4px;
+        border-radius: 25px;
         width: 80%;
+        justify-content: space-between;
         margin: 50px auto;
         overflow: hidden;
     }
@@ -26,7 +30,10 @@ body {
         padding: 25px 0px;
     }
     header {
+        display: flex;
+        flex-direction: column;
         background-color: $color5;
+        border-bottom: solid 4px $black;
         nav {
             ul {
                 padding: 0;
@@ -45,13 +52,41 @@ body {
         }
     }
     footer {
+        border-top: solid 4px $black;
         background-color: $color2;
     }
     main {
-        padding: 25px;
+        padding: 50px 25px;
         blockquote {
             background-color: rgba($color6, 0.5);
             padding: 20px;
+        }
+        .provinceSelect {
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            select {
+                width: 250px;
+                padding: 10px;
+                border: solid $black 2px;
+                border-radius: 5px;
+            }
+        }
+        .linksAndResources {
+            ul {
+                background-color: rgba($color6, 0.5);
+                text-align: left;
+                width: 90%;
+                max-width: 750px;
+                margin: 0 auto;
+                padding: 15px;
+                padding-left: 35px;
+                li {
+                    padding: 5px 0;
+                }
+            }
         }
         form {
             display: flex;
@@ -59,10 +94,13 @@ body {
             align-items: center;
             margin-top: 15px;
             gap: 10px;
+            fieldset {
+                border: none;
+            }
             label {
                 margin: 0;
             }
-            input, button {
+            input, button, textarea {
                 padding: 5px;
                 border: solid $black 2px;
                 border-radius: 5px;
@@ -86,10 +124,42 @@ body {
 // screens smaller than 768px
 @media only screen and (max-width: 768px) {
     body {
+        .App {
+            margin: 0;
+            min-height: 100vh;
+            width: 100%;
+            border: none;
+            border-radius: initial;
+            background: none;
+        }
+        header {
+            padding: 0;
+            nav {
+                border-top: solid 4px $black;
+                ul {
+                    margin: 0;
+                }
+            }
+            h1 {
+                padding: 25px 0px;
+            }
+        }
         main {
+            background: $white;
+            border-radius: 25px;
+            border: solid 4px $black;
+            width: 90%;
+            margin: 5% auto;
+            padding: 25px;
+            .provinceSelect {
+                flex-direction: column;
+            }
             form {
                 flex-direction: column;
             }
+        }
+        footer {
+            align-self: flex-end;
         }
     }
 }

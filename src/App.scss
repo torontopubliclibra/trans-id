@@ -55,6 +55,12 @@ body {
     background-color: $color1;
   }
   main {
+    a {
+      color: $color6;
+      &:hover {
+        color: $color2;
+      }
+    }
     padding: 50px;
     blockquote {
       background-color: rgba($color6, 0.5);
@@ -67,11 +73,19 @@ body {
       align-items: center;
       gap: 15px;
       select {
+        /* remove default for firefox */
+        -moz-appearance: none;
+        /* remove default for chrome */
+        -webkit-appearance: none;
+        /* replace icon */
+        background: url("assets/down-arrow.png") no-repeat right #fff;
+        background-size: 30px;
+        background-position: calc(100% - 7px);
+        line-height: 1.2;
         width: 250px;
         padding: 10px;
         border: solid $black 2px;
         border-radius: 5px;
-        background-color: #fff;
         cursor: pointer;
       }
     }
@@ -104,7 +118,7 @@ body {
       input,
       button,
       textarea {
-        padding: 5px;
+        padding: 7px;
         border: solid $black 2px;
         border-radius: 5px;
       }

@@ -58,11 +58,11 @@ body {
         }
         .linksAndResources {
             ul li {
-                color: $color1;
+                color: $black;
                 a {
                     color: $black;
                     &:hover {
-                        color: $white;
+                        color: $color1;
                         transition: 0.3s;
                     }
                 }

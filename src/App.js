@@ -4,6 +4,9 @@ import Guide from "./Guide";
 import About from "./About";
 import Links from "./Links";
 
+// import logo image
+import logo from './assets/logo.png';
+
 function App() {
   return (
     <div className="App">
@@ -11,6 +14,7 @@ function App() {
         <Link to="/">
           <div className="title">
             <h1>Trans I.D.</h1>
+            <img src={logo} alt="Trans I.D. logo" />
           </div>
         </Link>
         

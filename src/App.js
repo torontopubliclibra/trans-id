@@ -3,6 +3,7 @@ import { Link, Routes, Route } from 'react-router-dom';
 import Guide from "./Guide";
 import About from "./About";
 import Links from "./Links";
+import Downloads from "./Downloads";
 
 // import logo image
 import logo from './assets/logo.png';
@@ -27,6 +28,9 @@ function App() {
               <Link to="/links">Links</Link>
             </li>
             <li>
+              <Link to="/downloads">Downloads</Link>
+            </li>
+            <li>
               <Link to="/about">About</Link>
             </li>
           </ul>
@@ -35,6 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <Guide /> } /> 
         <Route path="/about" element={ <About /> } /> 
+        <Route path="/downloads" element={ <Downloads /> } /> 
         <Route path="/links" element={ <Links /> } /> 
       </Routes>
       <footer>

@@ -44,7 +44,7 @@ const Links = () => {
     }
 
     return (
-        <main>
+        <main className="links">
             <h2>Links and Resources</h2>
             <div className="provinceSelect">
                 <label for="provinces" className="sr-only">Select a province:</label>

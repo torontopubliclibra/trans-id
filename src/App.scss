@@ -92,28 +92,93 @@ body {
       background-color: rgba($color6, 0.5);
       padding: 20px;
     }
+    .guide {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: $color3;
+      border: solid $black 4px;
+      border-radius: 25px;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .guideNav {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .next, .back {
+        margin: 20px auto 5px auto;
+        padding: 10px 40px;
+        border: solid $black 2px;
+        border-radius: 15px;
+        background-color: $color5;
+        cursor: pointer;
+        &:hover {
+          background-color: $color4;
+        }
+      }
+      .ageSelect {
+        display: flex;
+        flex-direction: column;
+        label {
+          padding: 10px 0px;
+        }
+      }
+      .servicesButtons {
+        border: none;
+        margin: 0 auto;
+        legend {
+          margin: 0 auto;
+        }
+        .servicesButton {
+          border: none;
+          margin: 5px auto;
+          padding: 10px 5px;
+          border-radius: 15px;
+          border: solid $black 2px;
+          background-color: $white;
+          color: $black;
+          width: 100%;
+          max-width: 350px;
+          cursor: pointer;
+          &.selected {
+            background-color: $color2;
+            color: $white;
+          }
+        }
+      }
+      .guide2 {
+        width: 50%;
+      }
+    }
     .provinceSelect {
       padding-top: 15px;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 15px;
-      select {
-        /* remove default for firefox */
-        -moz-appearance: none;
-        /* remove default for chrome */
-        -webkit-appearance: none;
-        /* replace icon */
-        background: url("assets/down-arrow.png") no-repeat right #fff;
-        background-size: 30px;
-        background-position: calc(100% - 7px);
-        line-height: 1.2;
-        width: 250px;
-        padding: 10px;
-        border: solid $black 2px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
+    }
+    select {
+      /* remove default for firefox */
+      -moz-appearance: none;
+      /* remove default for chrome */
+      -webkit-appearance: none;
+      /* replace icon */
+      background: url("assets/down-arrow.png") no-repeat right #fff;
+      background-size: 30px;
+      background-position: calc(100% - 7px);
+      line-height: 1.2;
+      width: 250px;
+      padding: 10px;
+      border: solid $black 2px;
+      border-radius: 5px;
+      cursor: pointer;
     }
     .linksAndResources {
       ul {

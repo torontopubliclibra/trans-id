@@ -65,6 +65,21 @@ body {
     border-top: solid 4px $black;
     background-color: $color3;
   }
+  button, .button {
+    color: $black;
+    text-decoration: none;
+    padding: 7px 12px;
+    border: solid $black 2px;
+    border-radius: 5px;
+    width: 125px;
+    background-color: $color5;
+    cursor: pointer;
+    &:hover {
+      color: $black;
+      background-color: $color4;
+      transition: 0.3s;
+    }
+  }
   main {
     a {
       color: $color6;
@@ -142,7 +157,7 @@ body {
       }
     }
     .provinceSelect {
-      padding: 15px 0;
+      padding-top: 15px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -177,6 +192,28 @@ body {
         li {
           padding: 5px 0;
         }
+      }
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+      gap: 10px;
+      fieldset {
+        border: none;
+      }
+      label {
+        margin: 0;
+      }
+      input,
+      textarea {
+        padding: 7px;
+        border: solid $black 2px;
+        border-radius: 5px;
+      }
+      input {
+        width: 225px;
       }
     }
   }
@@ -221,6 +258,9 @@ body {
       form {
         flex-direction: column;
       }
+    }
+    .downloads, .links {
+      padding-bottom: 50px;
     }
     footer {
       align-self: flex-end;
